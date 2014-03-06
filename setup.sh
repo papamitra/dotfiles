@@ -1,24 +1,20 @@
-#!/bin/sh
+#!/bin/bash
 
-SHELL_DIR=$(readlink -f $(dirname $0))
+DOTFILES_DIR=$(readlink -f $(dirname $0))
 
-ln -s $SHELL_DIR/tmux/.tmux.conf $HOME/
-ln -s $SHELL_DIR/zsh/.zshrc $HOME/
+DOT_FILES=( .zsh .zshrc .tmux.conf .emacs.d)
 
-mkdir $HOME/zsh
-ln -s $SHELL_DIR/zsh/zsh $HOME/zsh
-ln -s $SHELL_DIR/zsh/behind-window-notify $HOME/zsh
-git clone https://github.com/zsh-users/zaw.git $HOME/zsh/zaw
+for file in ${DOT_FILES[@]}
+do
+    ln -s $DOTFILES_DIR/$file $HOME/$file
+done
 
-mkdir $HOME/.emacs.d
+git clone https://github.com/zsh-users/zaw.git $HOME/.zsh/zaw
+git clone https://github.com/tam17aki/elscreen.git $HOME/.emacs.d/site-lisp/elscreen
+
 EMACS_DIR=$HOME/.emacs.d
-
-ln -s $SHELL_DIR/emacs/init.el $EMACS_DIR/
-ln -s $SHELL_DIR/emacs/elpa $EMACS_DIR/
-ln -s $SHELL_DIR/emacs/site-lisp $EMACS_DIR/
-ln -s $SHELL_DIR/emacs/snippets $EMACS_DIR/
-
-git clone https://github.com/tam17aki/elscreen.git $SHELL_DIR/emacs/site-lisp/elscreen
-
-mkdir $HOME/.emacs.d/inits
+ln -s $EMACS_DIR/inits/elscreen.el  $EMACS_DIR/inits/50_elscreen.el
+ln -s $EMACS_DIR/inits/c++-mode.el  $EMACS_DIR/inits/50_c++-mode.el
+ln -s $EMACS_DIR/inits/c-mode.el    $EMACS_DIR/inits/50_c-mode.el
+ln -s $EMACS_DIR/inits/yasnippet.el $EMACS_DIR/inits/50_yasnippet.el
 

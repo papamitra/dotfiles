@@ -163,19 +163,19 @@ else
   alias emacs="emacs24 -nw"
 fi
 
-cheat-sheet () { zle -M "`cat ~/zsh/cheat-sheet.conf`" }
+cheat-sheet () { zle -M "`cat ~/.zsh/cheatsheets/cheat-sheet.conf`" }
 zle -N cheat-sheet
 bindkey "^[^h" cheat-sheet
 
-git-cheat () { zle -M "`cat ~/zsh/git-cheat.conf`" }
+git-cheat () { zle -M "`cat ~/.zsh/cheatsheets/git-cheat.conf`" }
 zle -N git-cheat
 bindkey "^[^g" git-cheat
 
-screen-cheat () { zle -M "`cat ~/zsh/screen-cheat.conf`" }
+screen-cheat () { zle -M "`cat ~/.zsh/cheatsheets/screen-cheat.conf`" }
 zle -N screen-cheat
 bindkey "^[^s" screen-cheat
 
-tmux-cheat () { zle -M "`cat ~/zsh/tmux-cheat.conf`" }
+tmux-cheat () { zle -M "`cat ~/.zsh/cheatsheets/tmux-cheat.conf`" }
 zle -N tmux-cheat
 bindkey "^[^t" tmux-cheat
 
@@ -187,10 +187,10 @@ zstyle ':chpwd:*' recent-dirs-max 5000
 zstyle ':chpwd:*' recent-dirs-default yes
 zstyle ':completion:*' recent-dirs-insert both
 
-source $HOME/zsh/zaw/zaw.zsh
+source $HOME/.zsh/zaw/zaw.zsh
 bindkey '^xb' zaw-cdr
 
-source $HOME/zsh/behind-window-notify/behind-window-notify.zsh
+source $HOME/.zsh/behind-window-notify/behind-window-notify.zsh
 
 #test
 
