@@ -18,5 +18,7 @@ ln -s $SHELL_DIR/emacs/elpa $EMACS_DIR/
 ln -s $SHELL_DIR/emacs/site-lisp $EMACS_DIR/
 ln -s $SHELL_DIR/emacs/snippets $EMACS_DIR/
 
+git clone https://github.com/tam17aki/elscreen.git $SHELL_DIR/emacs/site-lisp/elscreen
+
 mkdir $HOME/.emacs.d/inits
 
