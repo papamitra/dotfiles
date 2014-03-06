@@ -1,0 +1,3 @@
+# name: reference
+# --
+/// <reference path="$1" />

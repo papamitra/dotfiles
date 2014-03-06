@@ -1,0 +1,13 @@
+# name: jQuery cookbookテンプレート
+# --
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="" content="text/html; charset=UTF-8" />
+    <title></title>
+  </head>
+  <body>
+    $0
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  </body>
+</html>

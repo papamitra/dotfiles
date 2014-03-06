@@ -1,0 +1,5 @@
+# name: qunit test
+# --
+test("$1", function(){
+     $0
+});

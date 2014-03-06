@@ -1,0 +1,5 @@
+#name : qt namespace
+# --
+QT_BEGIN_NAMESPACE
+$0
+QT_END_NAMESPACE
