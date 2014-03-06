@@ -17,4 +17,5 @@ ln -s $SHELL_DIR/emacs/elpa $EMACS_DIR/
 ln -s $SHELL_DIR/emacs/site-lisp $EMACS_DIR/
 ln -s $SHELL_DIR/emacs/snippets $EMACS_DIR/
 
+mkdir $HOME/.emacs.d/inits
 
