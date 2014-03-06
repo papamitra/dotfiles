@@ -1,8 +1,16 @@
 ;;; -*- Emacs-Lisp -*-
 ;;; -*- coding: utf-8 -*-
 
+(setq load-path
+      (append
+       (list
+	(expand-file-name "~/.emacs.d/site-lisp/elscreen/")
+	)
+       load-path))
+
 ;(load "elscreen" "ElScreen" t)
 (require 'elscreen)
+(elscreen-start)
 
 ; C-', C-;でscreenを移動
 ;(global-set-key [?\C-'] 'elscreen-next)
