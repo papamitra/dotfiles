@@ -8,6 +8,7 @@ ln -s $SHELL_DIR/zsh/.zshrc $HOME/
 mkdir $HOME/zsh
 ln -s $SHELL_DIR/zsh/zsh $HOME/zsh
 ln -s $SHELL_DIR/zsh/behind-window-notify $HOME/zsh
+git clone https://github.com/zsh-users/zaw.git $HOME/zsh/zaw
 
 mkdir $HOME/.emacs.d
 EMACS_DIR=$HOME/.emacs.d
