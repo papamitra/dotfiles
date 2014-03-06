@@ -187,10 +187,10 @@ zstyle ':chpwd:*' recent-dirs-max 5000
 zstyle ':chpwd:*' recent-dirs-default yes
 zstyle ':completion:*' recent-dirs-insert both
 
-source $HOME/Dropbox/zsh/zaw/zaw.zsh
+source $HOME/zsh/zaw/zaw.zsh
 bindkey '^xb' zaw-cdr
 
-source $HOME/Dropbox/zsh/behind-window-notify/behind-window-notify.zsh
+source $HOME/zsh/behind-window-notify/behind-window-notify.zsh
 
 #test
 
