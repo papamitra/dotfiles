@@ -15,6 +15,4 @@ git clone https://github.com/tam17aki/elscreen.git $HOME/.emacs.d/site-lisp/elsc
 EMACS_DIR=$HOME/.emacs.d
 ln -s $EMACS_DIR/inits/elscreen.el  $EMACS_DIR/inits/50_elscreen.el
 ln -s $EMACS_DIR/inits/c++-mode.el  $EMACS_DIR/inits/50_c++-mode.el
-ln -s $EMACS_DIR/inits/c-mode.el    $EMACS_DIR/inits/50_c-mode.el
 ln -s $EMACS_DIR/inits/yasnippet.el $EMACS_DIR/inits/50_yasnippet.el
-
