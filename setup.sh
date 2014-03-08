@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOTFILES_DIR=$(readlink -f $(dirname $0))
+DOTFILES_DIR=`pwd`
 
 DOT_FILES=( .zsh .zshrc .tmux.conf .emacs.d)
 
