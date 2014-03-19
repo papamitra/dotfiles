@@ -5,6 +5,7 @@
 .emacs.d/history
 .emacs.d/site-lisp/elscreen
 .emacs.d/elpa/archives
+.emacs.d/url
 .zsh/zaw
 *#
 
