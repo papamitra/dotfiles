@@ -189,6 +189,10 @@ zstyle ':completion:*' recent-dirs-insert both
 
 source $HOME/.zsh/zaw/zaw.zsh
 bindkey '^xb' zaw-cdr
+bindkey '^r' zaw-history
+bindkey '^x^f' zaw-git-files
+bindkey '^x^p' zaw-process
+bindkey '^x^b' zaw-git-branches
 
 source $HOME/.zsh/behind-window-notify/behind-window-notify.zsh
 
