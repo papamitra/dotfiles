@@ -1,1 +1,0 @@
-/home/insight/dotfiles/.zsh
