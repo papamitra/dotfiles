@@ -179,6 +179,10 @@ tmux-cheat () { zle -M "`cat ~/.zsh/cheatsheets/tmux-cheat.conf`" }
 zle -N tmux-cheat
 bindkey "^[^t" tmux-cheat
 
+gitlog-cheat() { zle -M "`gitlog --all`"}
+zle -N gitlog-cheat
+bindkey "^[^l" gitlog-cheat
+
 export GPG_TTY=`tty`
 
 autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
