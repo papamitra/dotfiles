@@ -2,7 +2,7 @@
 
 DOTFILES_DIR=`pwd`
 
-DOT_FILES=( .zsh .zshrc .tmux.conf .emacs.d)
+DOT_FILES=( .gitconfig .zsh .zshrc .tmux.conf .emacs.d)
 
 for file in ${DOT_FILES[@]}
 do
